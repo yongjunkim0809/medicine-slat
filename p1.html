@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+  * {margin: 0;
+  padding: 0;
+box-sizing: border-box;
+font-size: 10px;
+
+}
+
+
+
+  .conta { display: grid;
+   grid-template-columns:repeat(2, 1fr) ;
+   text-align: center;
+  background-color: rgb(185, 236, 245);
+    padding:10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  
+  justify-content: center;
+  align-items: center
+  ;
+  gap:10px;
+  
+  }
+  .sidebar {display:grid;
+  grid-template-columns: 1fr 1fr;
+padding:10px;
+ gap:10px;}
+  .menu {display: flex;
+  background-color: white;
+border: 2px solid black;
+border-radius: 10px;
+cursor: pointer;
+padding:10px;
+font-size:15px;
+}
+.table{ display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap:10px;
+
+
+
+}
+.cell{background-color: white;
+border: 1px solid black;
+position: relative;
+}
+
+.header {
+text-align: center;
+font-size: 15px;
+}
+
+
+.cell img {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  
+}
+
+.menu:hover {
+  background-color: #ddd;
+  
+  
+}
+.text-block {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size:10px;
+}
+
+  </style>
+</head>
+<body>
+  <div class = "conta">
+     
+    <div class="header"><strong><h2 style="font-size:20px;">진접고 약찾기 <br>서비스(메스)</h2></strong></div>
+
+  <div class = "sidebar">
+    <div class ="menu" onclick="location.href='index.html'">메인<br>화면</div>
+    <div class ="menu" onclick="location.href='page2.html'">보건실위치</div>
+    <div class ="menu" onclick="location.href='page3.html'">내맞춤약찾기</div>
+  </div>
+</div>
+   
+
+
+
+
+
+
+  <div class = "table">
+  <div class = "cell"><img id="t" src="에스로반, 세균성 피부 감염 치료, 연고.jpg"> <div class="text-block"> <h1>에스로반 연고</h1>
+  <br><h3>상처,여드름,모낭염<br>2~3회 소량</h3></div>
+  </div>
+  <div class = "cell"><img src="박트로반, 세균성 피부 치료, 연고.jpg"> <div class="text-block"> <h1>박트로반 연고</h1><br><h3>모낭염,화상,외상   </div></div>
+  <div class = "cell"><img src="아나프록스, 염증 통증.jpg"> <div class="text-block"> <h1>아나프록스</h1><br><h3>타박상 관절염 편두통</h3>  </div></div>
+  <div class = "cell"><img src="탁센(치통 편두통 두통 생리통).jpg">   <div class="text-block">  <h1>탁센(소염진통제)</h1><br><h3>타박상,생리통,근육통</h3>  </div>    </div>
+  <div class = "cell"><img id="v" src="이지엔 6 프로, 각종 통증 완화.jpg">   <div class="text-block" >   <h1>이지엔6프로</h1><br><h3>두통,생리통,염좌,치통</h3>       </div>       </div>
+
+
+
+  <div class = "cell"><img src="이지엔6(두통 편두통 생리통).jpg">    <div class="text-block"> <h1>이지엔6애니</h1><br><h3>식사후섭취,프로와 동일 </div>    </div>
+  <div class = "cell"><img src="애드빌, 통증 완화.jpg">  <div class="text-block"> <h1>애드빌</h1><br><h3>빠른 효능,신경통 관절염 </div>   </div>
+  <div class = "cell"><img src="게보린, 해열.jpg">   <div class="text-block"> <h1>게보린</h1><br><h3>단기복용 필요,진통제,감기약 </div> </div>
+  <div class = "cell"><img  id="c" src="타이레놀, 두통 해열.webp">    <div class="text-block"> <h1>타이레놀</h1><br><h3>해열진통제 발열통증완화 </div>   </div>
+  <div class="cell"><img id="r" src="부루펜, 해열.jpg"  >  <div class="text-block"> <h1>부루펜</h1><br><h3>식사후복용,소염해열진통제 </div>    </div>
+  <div class="cell"><img src="볼타렌, 화상성 염증, 연고.jpg"> <div class="text-block"> <h1>볼타렌</h1><br><h3>화상성염증,관전통증완화</div></div>
+  <div class="cell"><img src="무피로신, 세균 감염 치료, 연고.jpg"> <div class="text-block"> <h1>무피로신</h1><br><h3>세균성 피부 감염 치료</div></div>
+  <div class="cell"><img src="덱시푸펜, 두통 완화, 알약.jpg"> <div class="text-block"><h1>덱시푸펜</h1><br><h3>두통 완화, 근육통 완화</div></div>
+  <div class="cell"><img id="u" src="마데카솔, 흉터 완화, 연고.jpg"> <div class="text-block"><h1>마데카솔</h1><br><h3>상처 치료, 흉터 완화</div></div>
+  <div class="cell"><img src="메카인정, 성인용 멀미약.webp"><div class="text-block"><h1>메카인정</h1><br><h3>성인용 멀미약, 어지럼증 완화</div></div>
+  <div class="cell"><img src="타피노펜, 해열 진통완화.jpg"><div class="text-block"> <h1>타피노펜</h1><br><h3>해열 진통 완화, 소염작용</div></div>
+  <div class="cell"><img src="일펜정, 염증과통증 완화.jpg"><div class="text-block"> <h1>일펜정</h1><br><h3>염증과 통증 완화, 해열</div></div>
+  <div class="cell"><img src="보나리에이정, 어지럼증 구토 완화 멀미예방.jpg"><div class="text-block"><h1>보나리에이정</h1><br><h3>어지럼증 완화, 구토 완화, 멀미 예방</div></div>
+  <div class="cell"><img src="파라존, 근육이완작용.webp"><div class="text-block"> <h1>파라존</h1><br><h3>근육이완작용, 근육통 완화</div></div>
+  <div class="cell"><img src="소보민시럽, 어린이용 멀미약.jpg"><div class="text-block"> <h1>소보민 시럽</h1><br><h3>어린이용 멀미약, 어지럼증 완화</div></div>
+  <div class="cell"><img src="까스활명수 소화 촉진, 위장 운동 자극, 메스꺼움 구토 진정.jpg"><div class="text-block"> <h1>까스활명수</h1><br><h3>소화 촉진, 위장 운동 자극, 메스꺼움 구토 진정</div></div>
+  <div class="cell"><img src="겔포스엠, 속쓰림 위염 완화.jpg"> <div class="text-block"> <h1>겔포스엠</h1><br><h3>속쓰림 완화, 위염 완화</div></div>
+  <div class="cell"><img src="베아제, 소화 불량 과식해결 소화제.jpg"><div class="text-block"><h1>베아제</h1><br><h3>소화불량, 과식해결</h3></div></div>
+  <div class="cell"><img src="스파토민, 위 장 경련 치료제, 위염.jpg"><div class="text-block"><h1>스파토민</h1><br><h3>위와 장 경련, 위염 치료 </h3></div></div>
+
+
+
+
+
+</body>
+</html>

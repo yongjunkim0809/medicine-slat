@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>진접고(메스)홈페이지</title>
+
+  <style>
+   
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
+    .container {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      min-height: 100vh;
+      background: white;
+      border: 2px solid black;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 100px 1fr 1fr 80px;
+      text-align: center;
+      background-color: rgb(185, 236, 245);
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    li {
+      list-style: none;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    li:hover {
+      color: white;
+      background-color: gray;
+    }
+
+    .header {
+      grid-column: 1 / 3;
+      grid-row: 1;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer {
+      grid-column: 1 / 3;
+      grid-row: 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .msc {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .right {
+      grid-column: 2;
+      grid-row: 2 / 4;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu {
+      font-size: 24px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+   
+    @media (max-width: 768px) {
+      .container {
+      
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto; 
+      }
+
+      .header {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 24px;
+        padding: 20px 0;
+      }
+
+      .logo {
+        grid-column: 1;
+        grid-row: 2;
+        padding: 20px;
+      }
+
+      .msc {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 20px;
+      }
+
+      .right {
+        grid-column: 1;
+        grid-row: 4;
+        margin-bottom: 20px;
+        padding: 0 20px;
+      }
+
+      .menu {
+        font-size: 20px;
+        gap: 15px;
+      }
+
+      .menu li {
+        border: 1px solid #777;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+
+      .footer {
+        grid-column: 1;
+        grid-row: 5;
+        padding: 20px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <i class="fa-duotone fa-solid fa-pills"></i>&nbsp;진접고 약찾기 홈페이지
+    </header>
+
+    <div class="logo">
+     
+      <img src="로고.jpg">
+    </div>
+
+    <div class="msc">
+     
+      <img src="B.png" style="width:100px;  height:auto; position:absolute; top:340px; right:20px">
+      <img src="Ｇ.png" style="width:100px; height:auto; position:absolute; top:340px; left:20px;"
+    </div>
+    <div class="right">
+     
+      <ul class="menu">
+        <li onclick="location.href='p1.html'">약찾기</li>
+        <li onclick="location.href='page2.html'">보건실위치</li>
+        <li onclick="location.href='page3.html'">약검색기</li>
+      </ul>
+    </div>
+
+    
+  </div>
+</body>
+
+</html>
